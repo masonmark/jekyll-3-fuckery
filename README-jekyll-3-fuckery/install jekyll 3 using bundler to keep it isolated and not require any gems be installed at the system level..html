@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Install Jekyll 3 using Bundler to keep it isolated and not require any gems be installed at the system level.</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.34">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; min-height: 16.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Menlo; background-color: #ddeaff}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Menlo; color: #9f9f0e; background-color: #ddeaff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Menlo; color: #1aad11; background-color: #ddeaff}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Hiragino Sans'; min-height: 21.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Menlo}
+    span.s1 {font-variant-ligatures: no-common-ligatures}
+    span.s2 {font: 10.0px 'Hiragino Sans'; font-variant-ligatures: no-common-ligatures}
+    span.s3 {font-variant-ligatures: no-common-ligatures; color: #ff2600}
+    span.s4 {font: 10.0px 'Apple Color Emoji'; font-variant-ligatures: no-common-ligatures}
+    span.s5 {text-decoration: underline ; font-variant-ligatures: no-common-ligatures}
+    span.s6 {font-variant-ligatures: no-common-ligatures; color: #492bd9}
+    span.s7 {font: 14.0px 'Hiragino Sans'}
+    span.s8 {font: 11.0px Menlo; text-decoration: underline ; font-kerning: none}
+    span.s9 {text-decoration: underline}
+    span.s10 {font-variant-ligatures: no-common-ligatures; background-color: #ddeaff}
+    span.s11 {font: 14.0px 'Helvetica Neue'}
+    span.s12 {font: 14.0px 'Lucida Grande'}
+    span.s13 {font: 14.0px 'Apple Color Emoji'}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><b>Install Jekyll 3 using Bundler to keep it isolated and not require any gems be installed at the system level.</b></p>
+<p class="p1">2016-01-08</p>
+<p class="p2"><br></p>
+<p class="p1">So wow, Bundler was not even fucking installed on my local machine! So, that is step 1:</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO Desktop]$ mkdir jekyll-3-fuckery</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO Desktop]$ cd jekyll-3-fuckery/</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$ mate Gemfile</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$ bundle install --path vendor/bundle</span></p>
+<p class="p3"><span class="s1">-bash: bundle: command not found </span><span class="s2">←　</span><span class="s3"><b>WHUT</b></span><span class="s1"> </span><span class="s4">😮</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$ sudo gem install bundler</span></p>
+<p class="p3"><span class="s1">Password:</span></p>
+<p class="p3"><span class="s1">Fetching: bundler-1.11.2.gem (100%)</span></p>
+<p class="p3"><span class="s1">Successfully installed bundler-1.11.2</span></p>
+<p class="p3"><span class="s1">Parsing documentation for bundler-1.11.2</span></p>
+<p class="p3"><span class="s1">Installing ri documentation for bundler-1.11.2</span></p>
+<p class="p3"><span class="s1">1 gem installed</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p2"><br></p>
+<p class="p1">OK, then. (Bundler is the one system gem we allow to be required; then all other gems can be restricted to the project that requires them.)</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$ bundle install --path vendor/bundle</span></p>
+<p class="p3"><span class="s1">Fetching gem metadata from <a href="https://rubygems.org/..........."><span class="s5">https://rubygems.org/...........</span></a>.</span></p>
+<p class="p3"><span class="s1">Fetching version metadata from <a href="https://rubygems.org/.."><span class="s5">https://rubygems.org/..</span></a>.</span></p>
+<p class="p3"><span class="s1">Fetching dependency metadata from <a href="https://rubygems.org/."><span class="s5">https://rubygems.org/.</span></a>.</span></p>
+<p class="p3"><span class="s1">Resolving dependencies...</span></p>
+<p class="p4"><span class="s1">Rubygems 2.0.14 is not threadsafe, so your gems will be installed one at a time. Upgrade to Rubygems 2.1.0 or higher to enable parallel gem installation.</span></p>
+<p class="p5"><span class="s1">Installing colorator 0.1</span></p>
+<p class="p5"><span class="s1">Installing ffi 1.9.10 with native extensions</span></p>
+<p class="p5"><span class="s1">Installing sass 3.4.20</span></p>
+<p class="p5"><span class="s1">Installing rb-fsevent 0.9.7</span></p>
+<p class="p5"><span class="s1">Installing kramdown 1.9.0</span></p>
+<p class="p5"><span class="s1">Installing liquid 3.0.6</span></p>
+<p class="p5"><span class="s1">Installing mercenary 0.3.5</span></p>
+<p class="p5"><span class="s1">Installing rouge 1.10.1</span></p>
+<p class="p5"><span class="s1">Installing safe_yaml 1.0.4</span></p>
+<p class="p3"><span class="s1">Using bundler 1.11.2</span></p>
+<p class="p5"><span class="s1">Installing rb-inotify 0.9.5</span></p>
+<p class="p5"><span class="s1">Installing jekyll-sass-converter 1.4.0</span></p>
+<p class="p5"><span class="s1">Installing listen 3.0.5</span></p>
+<p class="p5"><span class="s1">Installing jekyll-watch 1.3.0</span></p>
+<p class="p5"><span class="s1">Installing jekyll 3.0.1</span></p>
+<p class="p5"><span class="s1">Bundle complete! 1 Gemfile dependency, 15 gems now installed.</span></p>
+<p class="p5"><span class="s1">Bundled gems are installed into ./vendor/bundle.</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p2"><br></p>
+<p class="p1">We don't care about that Rubygems warning, because this is just supposed to work on any stock Mac machine. So, what did that create for us?</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$ ls -la</span></p>
+<p class="p3"><span class="s1">total 32</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>7 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>238 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:39 </span><span class="s6">.</span></p>
+<p class="p3"><span class="s1">drwx------+ 11 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>374 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:35 </span><span class="s6">..</span></p>
+<p class="p3"><span class="s1">-rw-r--r--@<span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff<span class="Apple-converted-space">&nbsp; </span>6148 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:39 .DS_Store</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>3 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>102 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:38 </span><span class="s6">.bundle</span></p>
+<p class="p3"><span class="s1">-rw-r--r--@<span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff<span class="Apple-converted-space">&nbsp; &nbsp; </span>44 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:36 Gemfile</span></p>
+<p class="p3"><span class="s1">-rw-r--r-- <span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>737 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:39 Gemfile.lock</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>3 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>102 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:38 </span><span class="s6">vendor</span></p>
+<p class="p2"><br></p>
+<p class="p1">OK, so let's create a .gitignore file to ignore that entire vendor directory; Bundler will recreate that as needed, and sometimes it contains machine-specific native binary crud.</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery]$ echo vendor &gt;&gt; .gitignore</span></p>
+<p class="p2"><br></p>
+<p class="p1">...and commit that shit.<span class="s7"> <span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p6"><br></p>
+<p class="p7"><span class="s7"><span class="Apple-tab-span">	</span>→ <a href="https://github.com/masonmark/jekyll-3-fuckery/commit/4c6e3b9826f6acc27d9398501214c54c8e2fe80f"><span class="s8"><b>4c6e3b9826f6acc27d9398501214c54c8e2fe80f</b></span></a></span></p>
+<p class="p2"><br></p>
+<p class="p1">Next, let's create the default new site with Jekyll 3. Hmm, Jekyll 3.what?</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$ bundle exec jekyll --version</span></p>
+<p class="p3"><span class="s1">jekyll 3.0.1</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p2"><br></p>
+<p class="p1">OK, 3.0.1, cool.</p>
+<p class="p2"><br></p>
+<p class="p1">Having to type "bundle exec" is a slight annoyance, but we can fix that later, and even if we don't, it is worth it to keep everything isolated in this one project. Installing gems (other than Bundler) at the system level on OS X does not promote good mental health.</p>
+<p class="p2"><br></p>
+<p class="p1">Since Jekyll itself is not installed globally, if we forget the "bundle exec", we get a helpful error:</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$ jekyll new website</span></p>
+<p class="p3"><span class="s1">-bash: jekyll: command not found</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p2"><br></p>
+<p class="p1">OK, so do it:</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$ bundle exec jekyll new website</span></p>
+<p class="p3"><span class="s1">New jekyll site installed in /Users/mason/Desktop/jekyll-3-fuckery/website.<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p2"><br></p>
+<p class="p1">It creates a new directory in our project, with the name "website" that we supplied:</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$ ls -al</span></p>
+<p class="p3"><span class="s1">total 40</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x<span class="Apple-converted-space">&nbsp; </span>10 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>340 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 </span><span class="s6">.</span></p>
+<p class="p3"><span class="s1">drwx------+ 11 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>374 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:35 </span><span class="s6">..</span></p>
+<p class="p3"><span class="s1">-rw-r--r--@<span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff<span class="Apple-converted-space">&nbsp; </span>6148 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 .DS_Store</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>3 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>102 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:38 </span><span class="s6">.bundle</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x<span class="Apple-converted-space">&nbsp; </span>11 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>374 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:47 </span><span class="s6">.git</span></p>
+<p class="p3"><span class="s1">-rw-r--r--@<span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; &nbsp; </span>7 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:46 .gitignore</span></p>
+<p class="p3"><span class="s1">-rw-r--r--@<span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff<span class="Apple-converted-space">&nbsp; &nbsp; </span>44 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:36 Gemfile</span></p>
+<p class="p3"><span class="s1">-rw-r--r-- <span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>737 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:39 Gemfile.lock</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>3 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>102 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:38 </span><span class="s6">vendor</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x<span class="Apple-converted-space">&nbsp; </span>12 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>408 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 </span><span class="s6">website</span></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p2"><br></p>
+<p class="p1">Inside that folder is a bunch of default content, which is <a href="http://jekyllrb.com/docs/structure/"><span class="s9">explained on the Jekyll website</span></a>:</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s1">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$ ls -la website/</span></p>
+<p class="p3"><span class="s1">total 56</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x<span class="Apple-converted-space">&nbsp; </span>15 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>510 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:51 </span><span class="s6">.</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x<span class="Apple-converted-space">&nbsp; </span>12 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>408 Jan<span class="Apple-converted-space">&nbsp; </span>8 13:12 </span><span class="s6">..</span></p>
+<p class="p3"><span class="s1">-rw-r--r--@<span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff<span class="Apple-converted-space">&nbsp; </span>6148 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:52 .DS_Store</span></p>
+<p class="p3"><span class="s1">-rw-r--r-- <span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff<span class="Apple-converted-space">&nbsp; &nbsp; </span>35 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 .gitignore</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>3 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>102 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:51 </span><span class="s6">.sass-cache</span></p>
+<p class="p3"><span class="s1">-rw-r--r-- <span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>891 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 _config.yml</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>9 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>306 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 </span><span class="s6">_includes</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>5 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>170 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 </span><span class="s6">_layouts</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>3 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>102 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 </span><span class="s6">_posts</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>5 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>170 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 </span><span class="s6">_sass</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>7 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>238 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:51 </span><span class="s6">_site</span></p>
+<p class="p3"><span class="s1">-rw-r--r-- <span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>536 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 about.md</span></p>
+<p class="p3"><span class="s1">drwxr-xr-x <span class="Apple-converted-space">&nbsp; </span>3 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>102 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 </span><span class="s6">css</span></p>
+<p class="p3"><span class="s1">-rw-r--r-- <span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff<span class="Apple-converted-space">&nbsp; </span>1291 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 feed.xml</span></p>
+<p class="p3"><span class="s1">-rw-r--r-- <span class="Apple-converted-space">&nbsp; </span>1 mason<span class="Apple-converted-space">&nbsp; </span>staff <span class="Apple-converted-space">&nbsp; </span>506 Jan<span class="Apple-converted-space">&nbsp; </span>8 11:49 <a href="index.html"><span class="s5">index</span></a>.html</span></p>
+<p class="p8"><span class="s10">[mason@IT-PC-MACPRO jekyll-3-fuckery (master)]$<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p2"><br></p>
+<p class="p1">Before we modify any of the website contents, let's commit the virgin website as auto-generated by Jekyll.<span class="Apple-converted-space">&nbsp;</span></p>
+<p class="p2"><br></p>
+<p class="p7"><span class="s11"><span class="Apple-tab-span">	</span></span><span class="s12">→</span><span class="s7"> <a href="https://github.com/masonmark/jekyll-3-fuckery/commit/45165d144fc4c22e2833fac21f07f5f6c64a0b1e"><span class="s8"><b>45165d144fc4c22e2833fac21f07f5f6c64a0b1e</b></span></a></span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="s13">🍺</span><span class="s7"> So... </span>Miller Time?</p>
+</body>
+</html>

@@ -21,7 +21,7 @@
 	<key>createdDate</key>
 	<date>2016-01-08T02:57:35Z</date>
 	<key>dataHash</key>
-	<string>ce5d14c365a8f90b597dbaff22261f618cd25946</string>
+	<string>872b81b2ee370a78fd98c6182a61ee5c3f995017</string>
 	<key>displayName</key>
 	<string>Install Jekyll 3 using Bundler to keep it isolated and not require any gems be installed at the system level.</string>
 	<key>encrypted</key>
@@ -31,7 +31,7 @@
 	<key>metaValues</key>
 	<dict/>
 	<key>modifiedDate</key>
-	<date>2016-01-08T04:53:10Z</date>
+	<date>2016-01-08T06:14:50Z</date>
 	<key>shouldHighlightLinks</key>
 	<string>Yes</string>
 	<key>skipOnExport</key>

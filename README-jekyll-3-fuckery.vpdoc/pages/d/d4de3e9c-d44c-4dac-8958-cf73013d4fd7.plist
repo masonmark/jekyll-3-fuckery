@@ -21,7 +21,7 @@
 	<key>createdDate</key>
 	<date>2016-01-08T04:56:28Z</date>
 	<key>dataHash</key>
-	<string>4d42162c61f79979c67ce3208495528fbda10b6c</string>
+	<string>fa9aed72464f9b47c4506ffe5bd34db21aea8ee7</string>
 	<key>displayName</key>
 	<string>Run Jekyll 3 and see how it works with the default auto-generated site</string>
 	<key>encrypted</key>
@@ -31,7 +31,7 @@
 	<key>metaValues</key>
 	<dict/>
 	<key>modifiedDate</key>
-	<date>2016-01-08T05:38:36Z</date>
+	<date>2016-01-08T06:14:40Z</date>
 	<key>shouldHighlightLinks</key>
 	<string>Yes</string>
 	<key>skipOnExport</key>
