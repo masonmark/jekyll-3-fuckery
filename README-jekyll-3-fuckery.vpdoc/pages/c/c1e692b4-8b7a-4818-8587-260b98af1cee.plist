@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aliases</key>
+	<array/>
+	<key>attributes</key>
+	<dict>
+		<key>documentBackgroundColor</key>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMDhAJmZgEBhg==
+		</data>
+		<key>lastEditingComputerName</key>
+		<string>IT-PC-MACPRO-002</string>
+		<key>lastEditingUserName</key>
+		<string>mason</string>
+	</dict>
+	<key>categories</key>
+	<array/>
+	<key>createdDate</key>
+	<date>2016-01-08T02:57:35Z</date>
+	<key>dataHash</key>
+	<string>fc8758840d00348ebaf4fbbb3319901ad8def4f2</string>
+	<key>displayName</key>
+	<string>Install Jekyll 3 using Bundler to keep it isolated and not require any gems be installed at the system level.</string>
+	<key>encrypted</key>
+	<string>No</string>
+	<key>key</key>
+	<string>install jekyll 3 using bundler to keep it isolated and not require any gems be installed at the system level.</string>
+	<key>metaValues</key>
+	<dict/>
+	<key>modifiedDate</key>
+	<date>2016-01-08T04:42:18Z</date>
+	<key>shouldHighlightLinks</key>
+	<string>Yes</string>
+	<key>skipOnExport</key>
+	<string>No</string>
+	<key>uti</key>
+	<string>com.apple.rtfd</string>
+	<key>uuid</key>
+	<string>c1e692b4-8b7a-4818-8587-260b98af1cee</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
