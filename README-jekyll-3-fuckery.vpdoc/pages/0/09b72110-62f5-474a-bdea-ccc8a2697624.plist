@@ -5,41 +5,29 @@
 	<key>aliases</key>
 	<array/>
 	<key>attributes</key>
-	<dict>
-		<key>documentBackgroundColor</key>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
-		AWMDhAJmZgEBhg==
-		</data>
-		<key>lastEditingComputerName</key>
-		<string>IT-PC-MACPRO-002</string>
-		<key>lastEditingUserName</key>
-		<string>mason</string>
-	</dict>
+	<dict/>
 	<key>categories</key>
 	<array/>
 	<key>createdDate</key>
-	<date>2016-01-08T02:54:19Z</date>
-	<key>dataHash</key>
-	<string>3b9bfcc444136543ea3f81c90767b876d6e03a52</string>
+	<date>2016-01-08T05:07:15Z</date>
 	<key>displayName</key>
-	<string>Index</string>
+	<string>Steve motherfucking Moser</string>
 	<key>encrypted</key>
 	<string>No</string>
 	<key>key</key>
-	<string>index</string>
+	<string>steve motherfucking moser</string>
 	<key>metaValues</key>
 	<dict/>
 	<key>modifiedDate</key>
-	<date>2016-01-08T04:56:28Z</date>
+	<date>2016-01-08T05:07:15Z</date>
 	<key>shouldHighlightLinks</key>
 	<string>Yes</string>
 	<key>skipOnExport</key>
 	<string>No</string>
 	<key>uti</key>
-	<string>com.apple.rtfd</string>
+	<string>com.fm.url</string>
 	<key>uuid</key>
-	<string>1bec3cca-b920-44d4-a7cb-eae4f7942ddd</string>
+	<string>09b72110-62f5-474a-bdea-ccc8a2697624</string>
 	<key>version</key>
 	<integer>1</integer>
 </dict>

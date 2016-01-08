@@ -19,19 +19,19 @@
 	<key>categories</key>
 	<array/>
 	<key>createdDate</key>
-	<date>2016-01-08T02:57:35Z</date>
+	<date>2016-01-08T04:56:28Z</date>
 	<key>dataHash</key>
-	<string>ce5d14c365a8f90b597dbaff22261f618cd25946</string>
+	<string>4d42162c61f79979c67ce3208495528fbda10b6c</string>
 	<key>displayName</key>
-	<string>Install Jekyll 3 using Bundler to keep it isolated and not require any gems be installed at the system level.</string>
+	<string>Run Jekyll 3 and see how it works with the default auto-generated site</string>
 	<key>encrypted</key>
 	<string>No</string>
 	<key>key</key>
-	<string>install jekyll 3 using bundler to keep it isolated and not require any gems be installed at the system level.</string>
+	<string>run jekyll 3 and see how it works with the default auto-generated site</string>
 	<key>metaValues</key>
 	<dict/>
 	<key>modifiedDate</key>
-	<date>2016-01-08T04:53:10Z</date>
+	<date>2016-01-08T05:38:36Z</date>
 	<key>shouldHighlightLinks</key>
 	<string>Yes</string>
 	<key>skipOnExport</key>
@@ -39,7 +39,7 @@
 	<key>uti</key>
 	<string>com.apple.rtfd</string>
 	<key>uuid</key>
-	<string>c1e692b4-8b7a-4818-8587-260b98af1cee</string>
+	<string>d4de3e9c-d44c-4dac-8958-cf73013d4fd7</string>
 	<key>version</key>
 	<integer>1</integer>
 </dict>
